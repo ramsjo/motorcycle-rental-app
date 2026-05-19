@@ -8,7 +8,7 @@ export default function Home() {
      Fetch bikes from backend
   -------------------------------- */
   useEffect(() => {
-    fetch("http://localhost:5000/api/bikes")
+    fetch("https://motorcycle-rental-api.onrender.com/api/bikes")
       .then((res) => res.json())
       .then((data) => {
         // Take first 3 bikes

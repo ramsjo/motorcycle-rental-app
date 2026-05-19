@@ -26,7 +26,7 @@ export default function Booking() {
   useEffect(() => {
     if (!formData.bike) return;
 
-    fetch(`http://localhost:5000/api/bookings/${formData.bike}`)
+    fetch(`https://motorcycle-rental-api.onrender.com/api/bookings/${formData.bike}`)
       .then((res) => res.json())
       .then((data) => {
         const dates = [];
@@ -78,7 +78,7 @@ export default function Booking() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/bookings",
+        "https://motorcycle-rental-api.onrender.com/api/bookings",
         {
           method: "POST",
           headers: {

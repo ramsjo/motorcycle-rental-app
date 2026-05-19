@@ -18,7 +18,7 @@ export default function Fleet() {
      Fetch bikes from backend
   -------------------------------- */
   useEffect(() => {
-    fetch("http://localhost:5000/api/bikes")
+    fetch("https://motorcycle-rental-api.onrender.com/api/bikes")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch bikes");
